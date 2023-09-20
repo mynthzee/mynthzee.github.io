@@ -1,0 +1,220 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: #212121;
+    padding: 0;
+    margin: 0;
+}
+.hero-header{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background:#212121;
+    margin: 0;
+}
+.wrapper{
+    background-color: black;
+    height: 120px;
+    
+    
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 17%;
+    width: 17%;
+    float: left;
+    
+    margin-left: -575px;
+    margin-top: -10px;
+    
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.logo .logo-text{
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.active{
+    color: #D0010A;
+    font-family: 'Oswald', sans-serif;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #D0010A;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+    margin-left: 1100px;
+    margin-top: -75px;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    float: right;
+    
+}
+nav .navlinks li{
+    font-family: 'Times New Roman', Times, serif;
+    /*margin-top: 30px;*/
+    
+    font-size: 25px;
+    margin-top: -90px;
+}
+nav .navlinks li a{
+    color: #fff;
+    margin-right: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    /*display: inline-block;*/
+    
+}
+nav .navlinks li a:hover{
+    color: #D0010A;
+}
+nav .navlinks.open{
+    right: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-top: 50px;
+        margin-left: 250px;
+}
+.hero-text .sosmed i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .sosmed i:hover{
+    color: #D0010A;
+    transform: rotate(360deg);
+}
+@media(max-width:930px)
+{
+    .logo .logo-text{
+        margin-left: 10px;
+    }
+    nav .togglebtn{
+        display: initial;
+    }
+    .click{
+        top: 45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top: 110px;
+        right:-100%;
+        bottom: 0;
+        width: 30%;
+        height: 30vh;
+        background-color: black;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+        text-align: center;
+        
+    }
+    nav .navlinks li a{
+        padding: 0px 0px 0px 0px;
+        margin-bottom: 5px;
+        text-align: center;
+        color: #D0010A;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 70%;
+        display: flex;
+    }
+    nav .navlinks.open{
+        right:0;
+        display: grid;
+        text-align: center;
+        
+    }
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+        justify-content: center;
+    }
+    .hero-text{
+        padding: 40px 0px;
+        width: 650;
+        height: 252;
+        margin-right: 510px;
+    }
+    .hero-text img{
+        width: 30;
+        justify-content: center;
+        margin-right: 250px;
+    }
+}

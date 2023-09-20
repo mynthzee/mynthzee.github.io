@@ -1,0 +1,522 @@
+<!DOCTYPE data siswa>
+
+<html>
+
+<head>
+    <body style="background-color: black;">
+	<div style="text-align: center;">
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>X RPL 1 SMK Negeri 10 Surabaya</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    </head>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-top: -400px;
+			background-color: #000000;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #000000;
+		}
+        tr:hover{
+        background-color: rgb(255, 255, 255);
+    }
+    th {
+        background-color: #9f0000;
+        color: rgb(0, 0, 0);
+    }
+    .row1{
+        background-color: white;
+    }
+    .row2 a{
+        color: black;
+        }
+		*{
+    
+			padding: 0;
+			margin: 0;
+			font-family: poppins,sans-serif;
+			text-decoration: none;
+		}
+		body{
+			overflow-x: hidden;
+			background-color: #212121;
+			padding: 0;
+			margin: 0;
+		}
+		.hero-header{
+			width: 100%;
+			height: 100%;
+			min-height: 100vh;
+			background:#212121;
+			margin: 0;
+		}
+		.wrapper{
+			background-color: black;
+			height: 120px;
+			
+			
+		}
+		header{
+			padding: 40px 0 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		
+		}
+		.logo{
+			display: inline-flex;
+			justify-content: center;
+			margin-left: -1389px;
+		}
+		.logo img{
+			height: 17%;
+			width: 17%;
+			float: left;
+			
+			margin-left: -575px;
+			margin-top: -10px;
+			
+			font-weight: 700;
+			font-size: 1.5rem;
+			padding: 10px;
+			margin-right: 5px;
+			cursor: pointer;
+			text-align: center;
+		}
+		.logo .logo-text{
+			font-size: 48px;
+			font-weight: 500;
+			color: #fff;
+			font-family: 'Oswald', sans-serif;
+			font-weight: bold;
+		}
+		.active{
+			color: #D0010A;
+			font-family: 'Oswald', sans-serif;
+		}
+		nav .togglebtn{
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			top: 45px;
+			right: 3%;
+			z-index: 5;
+			cursor: pointer;
+			display: none;
+		}
+		nav .togglebtn span{
+			display: block;
+			background-color: #D0010A;
+			margin: 5px 0px;
+			width: 100%;
+			height: 3px;
+			transition: 0.3s;
+			transition-property: transform, opacity;
+		}
+		nav .navlinks{
+			list-style-type: none;
+			margin-left: 1100px;
+			margin-top: -75px;
+			display: flex;
+			text-align: center;
+			margin: 10px;
+			float: right;
+		}
+		nav .navlinks li{
+			font-family: 'Times New Roman', Times, serif;
+			/*margin-top: 30px;*/
+			
+			font-size: 25px;
+			margin-top: -90px;
+		}
+		nav .navlinks li a{
+			color: #fff;
+			margin-right: 2.5rem;
+			font-family: 'Oswald', sans-serif;
+			/*display: inline-block;*/
+			
+		}
+		nav .navlinks li a:hover{
+			color: #D0010A;
+		}
+		nav .navlinks.open{
+			right: 0;
+		}
+
+		.hero-text{
+			max-width: 500px;
+			display: flex;
+			flex-direction: column;
+		}
+		.hero-text img{
+				width: 100%;
+				height: auto;
+				max-width: 100%;
+				margin-top: 50px;
+				margin-left: 250px;
+		}
+		.container{
+			margin-top:250px ;
+			margin-left:20px ;
+			color: white;
+			font-size: 30px;
+		}
+		.RPL{
+			color: red;
+		}
+		h2{
+			font-size: 30px;
+			margin-left: 30px;
+		}
+		@media(max-width:930px)
+		{
+			.logo .logo-text{
+				margin-left: 1040px;
+			}
+			nav .togglebtn{
+				display: initial;
+			}
+			.click{
+				top: 45px;
+			}
+			.click span{
+				position: absolute;
+				margin-top: 12px;
+			}
+			.click span:first-child{
+				transform: rotate(-40deg);
+			}
+			.click span:nth-child(2){
+				opacity: 0;
+				margin: 0;
+			}
+			.click span:last-child{
+				transform: rotate(45deg);
+				top: 0;
+			}
+			nav .navlinks{
+				position: absolute;
+				top: 110px;
+				right:-100%;
+				bottom: 0;
+				width: 30%;
+				height: 30vh;
+				background-color: black;
+				z-index: 3;
+				box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+				transition: 0.5s;
+				padding: 25px 0px;
+			}
+			nav .navlinks li{
+				display: block;
+			}
+			nav .navlinks li a{
+				padding: 0px 0px 0px 0px;
+				margin-bottom: 5px;
+				text-align: center;
+				color: #D0010A;
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 70%;
+				display: flex;
+			}
+			nav .navlinks.open{
+				right:0;
+				display: grid;
+			}
+		}
+		@media(max-width:768px){
+			.container{
+				flex-direction: column;
+				padding-top: 2rem;
+			}
+			.hero-text{
+				padding: 40px 0px;
+				width: 650;
+				height: 252;
+			}
+			.hero-text img{
+				width: 30;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<ul>
+				<div class="logo">
+					<!--<img src="rpl one.jpg"></img>-->
+					<h1 class="logo-text">X <span class="active">RPL</span>1</h1>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="navlinks">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="struktur.html">Struktur</a></li>
+						<li><a href="absen.html">Absen </a></li>
+						<li><a href="piket.html">Piket</a></li>
+					</div>
+				</nav>
+			</ul>
+			
+			</div>
+		</div>
+	</div>
+	<table>
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>Alamat</th>
+			<th>Sosmed</th>
+		</tr>
+		<tr>
+			<td class="row1">1</td>
+			<td class="row2">Ahmad Farras Rifandy</td>
+			<td class="row2">contoh</td>
+			<td class="row2">contoh</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td class="row1">3</td>
+			<td class="row2">Alessandro Aryaputra</td>
+			<td class="row2">contoh</td>
+			<td class="row2">contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">4</td>
+			<td class="row2">Alif Firdaus Mulyanto</td>
+			<td class="row2">contoh</td>
+			<td class="row2">contoh</td>
+		</tr>
+        <tr>
+			<td class="row1">5</td>
+			<td>Andhika Putra Ramadhan</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">6</td>
+			<td>Aqila Amathurrahman Mewvian</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">7</td>
+			<td>Bayu Bramasta Putra Widodo</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">8</td>
+			<td>Cahyaningrat Prasetya</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">9</td>
+			<td>Callista Melody K.</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">10</td>
+			<td>Chelsea Oktaviano</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">11</td>
+			<td>Davin Syainal Amin</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">12</td>
+			<td>Dhamar Rizky Widiyas Yanto</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">13</td>
+			<td>Dickey Satria Bafana</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">14</td>
+			<td>Elberta Bara Astrea</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">15</td>
+			<td>Elvino Nabil Praditya</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">16</td>
+			<td>Fachreza Ferdiansyah</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">17</td>
+			<td>Galang Samsul Maarif</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">18</td>
+			<td>Hari Surya Pratama</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">19</td>
+			<td>Ivander Rafi Alana</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">20</td>
+			<td>Masdhar Arafat</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">21</td>
+			<td>Mirza Hanif Hummam A.</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">22</td>
+			<td>Mochammad Dimas Rassya T.</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">23</td>
+			<td>Muhammad Iqbal Fathyyatan</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">24</td>
+			<td>Muhammad Rasya Alfath</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">25</td>
+			<td>Mychild Dean Akhtar G.</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">26</td>
+			<td>Nabila Putri Prasetyo</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td>27</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td class="row1">28</td>
+			<td>Naili Rohmah</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">29</td>
+			<td>Naima Rahmani Allima</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">30</td>
+			<td>Ngabdullah Hakim</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">31</td>
+			<td>Oskatri Norta Wira Kusuma</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">32</td>
+			<td>Ravino Aldiharto</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">33</td>
+			<td>Renata Nabila Azzahra A.</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">34</td>
+			<td>Rival Azriel Prasetya</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">35</td>
+			<td>Syifa Rizka Angeli</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">36</td>
+			<td>Tino Davin Alrizki</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">37</td>
+			<td>Yunita Puti Aurel</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+		<tr>
+			<td class="row1">38</td>
+			<td>Putri Elia</td>
+			<td>contoh</td>
+			<td>contoh</td>
+		</tr>
+	</table>
+	<script src="home.js"></script>
+
+</body>
+
+</html>
